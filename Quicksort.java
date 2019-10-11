@@ -5,15 +5,8 @@ import java.util.ArrayList;
 import java.util.Collections;
 import java.util.List;
 
-// Java program for implementation of QuickSort
 class QuickSort
 {
-    /* This function takes last element as pivot,
-    places the pivot element at its correct
-    position in sorted array, and places all
-    smaller (smaller than pivot) to left of
-    pivot and all greater elements to right
-    of pivot */
     int partition(List arr, int low, int high)
     {
         int pivot = (int) arr.get(high);
@@ -26,21 +19,12 @@ class QuickSort
                 i++;
                 Collections.swap(arr,i,j);
                 // swap arr[i] and arr[j]
-                //int temp = arr[i];
-                //arr[i] = arr[j];
-                //arr[j] = temp;
             }
         }
         Collections.swap(arr,i+1,high);
         // swap arr[i+1] and arr[high] (or pivot)
-        //int temp = arr[i+1];
-        //arr[i+1] = arr[high];
-        //arr[high] = temp;
-
         return i+1;
     }
-
-
     /* The main function that implements QuickSort()
     arr[] --> Array to be sorted,
     low --> Starting index,
@@ -72,8 +56,6 @@ class QuickSort
     // Driver program
     public static void main(String args[])
     {
-        //int arr[] = {10, 7, 8, 9, 1, 5};
-        //int n = arr.length;
         List<Integer> arr = new ArrayList<Integer>();
         arr.add(1);arr.add(6);arr.add(20);arr.add(7);arr.add(50);arr.add(13);arr.add(25);
         arr.add(8);
