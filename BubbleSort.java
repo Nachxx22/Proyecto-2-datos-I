@@ -3,7 +3,6 @@ import java.util.ArrayList;
 import java.util.Collections;
 import java.util.List;
 
-// Java program for implementation of Bubble Sort
 class BubbleSort
 {
     void bubbleSort(List<Integer> arr)
@@ -15,9 +14,6 @@ class BubbleSort
                 {
                     Collections.swap(arr,j,j+1);
                     // swap arr[j+1] and arr[i]
-                    //int temp = arr.get(j);
-                    //arr[j] = arr.get(j+1);
-                    //arr[j+1] = temp;
                 }
     }
 
@@ -30,7 +26,6 @@ class BubbleSort
         System.out.println();
     }
 
-    // Driver method to test above
     public static void main(String args[])
     {
         BubbleSort ob = new BubbleSort();
