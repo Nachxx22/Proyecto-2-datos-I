@@ -1,3 +1,4 @@
+package Ordenamiento;
 public class Nodo {
     private Nodo siguiente;
     private Object dato;
