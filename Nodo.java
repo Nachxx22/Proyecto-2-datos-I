@@ -1,7 +1,8 @@
 package Ordenamiento;
 public class Nodo {
+    public Object dato;
     private Nodo siguiente;
-    private Object dato;
+    //private Object dato;
     Nodo(Object dato){
         this.dato =dato;
         this.siguiente= null;
